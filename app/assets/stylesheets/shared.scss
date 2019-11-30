@@ -1,0 +1,56 @@
+
+$darkBlue: #1c2729;
+$lightGreen: #78c800;
+$darkGreen: #58a700;
+
+footer, header {
+  padding: 10px 0;
+  color: #fff;
+}
+
+footer {
+  padding: 70px 0 40px;
+  background-color: $darkBlue;
+}
+
+footer a {
+  margin: 0 20px;
+  color: #fff;
+}
+
+footer a:hover {
+  color: $lightGreen;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  align-items: center;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  align-items: baseline;
+}
+
+.title {
+  font-size: 20px;
+  margin: 22px 0;
+  padding: 0 5px;
+  color: #fff;
+}
+
+.footer_links {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.copyright {
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
