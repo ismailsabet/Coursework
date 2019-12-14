@@ -1,0 +1,42 @@
+<div id="top">
+  <%= render 'shared/header' %>
+  <div class="top_padding">
+    <div class="container">
+      <div class="top_width">
+        <h1 class="heading"><%= t('.app_description') %></h1>
+        <%= link_to "Get Started", new_playlist_path, class: "getStarted"%>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="mid">
+  <div class="container">
+    <div class="row">
+      <div class="info">
+        <h2 class="titles"><%= t('.playlist_title') %></h2>
+        <p class="texts"><%= t('.playlist_description') %></p>
+        <a href="#" class="buttons"><%= t('.playlist_button') %></a>
+      </div>
+      <div class="albums">
+        <%= image_tag("3.jpg", class: "album")%>
+        <%= image_tag("2.jpg", class: "album")%>
+        <%= image_tag("1.jpg", class: "album")%>
+        <%= image_tag("4.jpg", class: "album")%>
+      </div>
+    </div>
+
+    <div class="row row-playlists">
+      <div class="info">
+        <h2 class="titles"><%= t('.song_title') %></h2>
+        <p class="texts"><%= t('.song_description') %></p>
+      </div>
+      <div class="songs">
+        <a href="#" class="buttons"><%= t('.song_button') %></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%= render 'shared/footer' %>
