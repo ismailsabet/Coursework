@@ -3,12 +3,11 @@
     <nav>
       <%= link_to "Sunny's funland", root_path, class: "title" %>
       <div class="nav_links">
-        <a href="#" class="button">Songs</a>
-        <a href="#" class="button">Albums</a>
-        <a href="playlists" class="button">Playlists</a>
-        <a href="contact" class="button">Contact Us</a>
+        <%= link_to "Songs", songs_path, class: "button" %>
+        <%= link_to "Playlists", playlists_path, class: "button" %>
+        <%= link_to "Contact Us", contact_path, class: "button" %>
       </div>
-      <a href="#" class="button menu"><i class="fas fa-bars"></i> Menu</a>
+      <a href="#" class="button menu"><i class="fas fa-bars"></i><%= t('.app_title') %></a>
     </nav>
   </div>
 </header>

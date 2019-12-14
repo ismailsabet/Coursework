@@ -1,16 +1,16 @@
 
-$darkBlue: #1c2729;
+$darkBlue: #071815;
 $lightGreen: #78c800;
 $darkGreen: #58a700;
 
 footer, header {
   padding: 10px 0;
   color: #fff;
+  background-color: $darkBlue;
 }
 
 footer {
   padding: 70px 0 40px;
-  background-color: $darkBlue;
 }
 
 footer a {
