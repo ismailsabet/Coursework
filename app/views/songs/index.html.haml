@@ -1,0 +1,26 @@
+= render 'shared/header'
+
+%div{:id => 'mid'}
+  %div{:class => 'container'}
+    %h1 Songs
+
+    %table
+      %thead
+        %tr
+          %th Name
+          %th Artist
+          %th Album
+          %th Playlist
+          %th
+
+      %tbody
+        - @songs.each do |song|
+          %tr
+            %td= song.name
+            %td= song.artist
+            %td= song.album
+            %td= song.playlist.name
+            %td= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, song, method: :delete, data: { confirm: 'Are you sure?' }, remote: true
+
+
+= render 'shared/footer'

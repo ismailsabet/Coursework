@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Do I Wanna Know
+  artist: Arctic Monkeys
+  album: AM
+  playlist_id: 1
+
+two:
+  name: Layla
+  artist: Eric Clapton
+  album: Unplugged (Deluxe Edition)
+  playlist_id: 1

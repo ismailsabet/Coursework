@@ -1,0 +1,25 @@
+= render 'shared/header'
+
+%div{id: 'mid'}
+  %div{class: 'container'}
+    %div{class: 'show_songs'}
+      %img{src: @song.img_url, class: 'show_songs_img'}
+      %div{class: 'show_songs_info'}
+        %p
+          %b Name:
+          = @song.name
+        %p
+          %b Artist:
+          = @song.artist
+        %p
+          %b Album:
+          = @song.album
+        %p
+          %b Playlist:
+          = @song.playlist.name
+
+        = link_to 'Back', playlist_path(id: @song.playlist_id), class: "button"
+
+        %p#notice= notice
+
+= render 'shared/footer'

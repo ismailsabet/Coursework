@@ -1,0 +1,33 @@
+// Place all the styles related to the Songs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#search {
+  width: 100%;
+  border: 1px solid #b3b3b3;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.add {
+  margin: 0 !important;
+  text-align: center;
+  color: black !important;
+}
+
+.show_songs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.show_songs_img {
+  height: 350px;
+  width: 350px;
+  margin-right: 60px;
+  box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15);
+}
+
+.show_songs_info {
+  flex: 1;
+}
