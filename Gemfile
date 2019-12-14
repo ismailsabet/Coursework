@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'webpacker', github: 'rails/webpacker'
 gem 'jquery-rails'
 gem 'haml-rails'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'modernizr-rails'
 gem 'rails-controller-testing'
 
