@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+result = Result.where(name: 'init').first
+result.delete if result
+
+initResult = Result.create([id: 1, name: 'init'])
