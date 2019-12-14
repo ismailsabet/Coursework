@@ -1,0 +1,31 @@
+= render 'shared/header'
+
+%div{:id => 'mid'}
+  %div{:class => 'container'}
+
+    %h1= @playlist.name
+    %p
+      %b Songs:
+      = @playlist.num_of_songs
+
+    %table
+      %thead
+        %th Name
+        %th Artist
+        %th Album
+        %th
+
+      %tbody
+        - @playlist.songs.each do |song|
+          %tr
+            %td= link_to song.name, song
+            %td= song.artist
+            %td= song.album
+            %td= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, song, method: :delete, remote: true
+
+
+    = link_to 'Add song', new_song_path(playlist_id: @playlist), class: "button"
+    = link_to 'Back', playlists_path, class: "button"
+    %p#notice= notice
+
+= render 'shared/footer'

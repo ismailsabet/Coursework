@@ -1,0 +1,27 @@
+= render 'shared/header'
+
+%div{:id => 'mid'}
+  %div{:class => 'container'}
+    %h1 Playlists
+
+    %table
+      %thead
+        %tr
+          %th Name
+          %th Songs
+          %th
+          %th
+
+      %tbody
+        - @playlists.each do |playlist|
+          %tr
+            %td= link_to playlist.name, playlist, class: "link"
+            %td= playlist.songs.size()
+            %td= link_to '<i class="fas fa-edit"></i>'.html_safe, edit_playlist_path(playlist)
+            %td= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, playlist, method: :delete, remote: true
+
+    %br
+
+    = link_to 'New Playlist', new_playlist_path, class: "button"
+
+= render 'shared/footer'

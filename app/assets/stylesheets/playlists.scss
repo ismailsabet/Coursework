@@ -1,0 +1,37 @@
+// Place all the styles related to the Playlists controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$darkBlue: #1c2729;
+$lightGreen: #78c800;
+
+th {
+  padding-bottom: 10px;
+}
+
+table {
+  max-height: 1000px;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  text-align: left;
+}
+
+td a {
+  width: 100%;
+  display: block;
+  padding: 5px 20px 5px 0;
+}
+
+tbody tr:hover {
+  background-color: $lightGreen;
+  color: white;
+}
+
+tbody tr:hover a {
+  color: white;
+}
+
+td {
+  border-top: 1px solid #b3b3b3;
+}
