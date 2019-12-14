@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+$darkBlue: #1c2729;
+$lightGreen: #78c800;
+$darkGreen: #58a700;
+
+@import url('https://rsms.me/inter/inter.css');
+@import "bootstrap-sprockets";
+
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   margin: 0;
+   font-family: 'Inter', sans-serif !important;
+   line-height: 1.5;
+ }
+
+ .container {
+   margin: 0 auto;
+   padding: 0 40px;
+   max-width: 1120px;
+ }
+
+ .button {
+   margin: 16px 14px 16px 0;
+   padding: 8px 16px;
+   cursor: pointer;
+   background: #fff;
+   border: 1px solid #e8ebeb;
+   border-radius: 6px;
+   color: #000;
+ }
+
+ .button:hover {
+   background: $lightGreen;
+   border-color: $lightGreen;
+   color: #fff !important;
+ }
+
+ a {
+   text-decoration: none !important;
+   color: black;
+ }
+
+ h1 {
+   font-size: 40px;
+   line-height: 50px;
+   margin: 0;
+ }

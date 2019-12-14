@@ -1,3 +1,204 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$darkBlue: #071815;
+$lightGreen: #78c800;
+$darkGreen: #58a700;
+
+#top {
+  background: image-url('bg_img.jpg') no-repeat;
+  background-size: cover;
+  background-position: center 40%;
+  background-color: $darkBlue;
+  background-blend-mode: multiply;
+}
+
+#top header {
+  background-color: transparent !important;
+}
+
+.top_padding {
+  padding: 150px 0 200px 20px;
+}
+
+.top_width {
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  margin: 0;
+  padding-bottom: 30px;
+  letter-spacing: -0.035em;
+  color: white;
+}
+
+.getStarted {
+  margin: 16px 0;
+  padding: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background: $lightGreen;
+  border: 4px solid;
+  border-color: $darkGreen;
+  color: white;
+  max-width: 270px !important;
+  border-width: 0 0 4px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.getStarted:hover {
+  background-color: #84db00;
+  color: white;
+}
+
+.getStarted:active {
+  border-color: $darkBlue;
+  border-width: 4px 0 0;
+  color: white;
+}
+
+#mid {
+  padding: 60px 0;
+}
+
+.albums {
+  display: flex;
+  flex: 1.7;
+  margin: 0;
+  padding: 35px 0;
+  justify-content: center;
+  list-style-type: none;
+  flex-flow: row wrap;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .row {
+    flex-direction: column;
+    padding: 48px 20px !important;
+  }
+  .titles {
+    margin: 0 !important;
+  }
+  .info {
+    align-items: center;
+    text-align: center;
+  }
+  .texts {
+    margin: 0 !important;
+  }
+  .album {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .container {
+    padding: 0 20px !important;
+  }
+  .nav_links {
+    display: none !important;
+  }
+  .menu {
+    display: flex !important;
+    width: 100px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .albums {
+    padding: 0 !important;
+  }
+
+}
+
+.album {
+  margin: 10px;
+  border: 0;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 5px 16px 0px rgba(0,0,0,0.1);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  flex: 1;
+}
+
+.buttons {
+  color: white;
+  background-color: $lightGreen;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 16px 45px;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  width: 220px;
+  margin: 10px 0;
+}
+
+.buttons:hover {
+  background-color: #84db00;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 80px;
+  padding: 48px;
+  background-color: #fff;
+  box-shadow: 0 1px 15px rgba(27,31,35,0.15);
+  border-radius: 6px;
+}
+
+.row-playlists {
+  background: #1B1F23 url(https://github.githubassets.com/images/modules/site/universe19.png) bottom right no-repeat;
+  background-size: contain;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.texts {
+  margin: 0 40px 10px 0;
+  font-size: 18px;
+  color: #586069;
+}
+
+.titles {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.songs {
+  display: flex;
+  align-items: center;
+  flex: 0.4;
+  flex-direction: row;
+  text-align: center;
+  margin: 15px 0;
+  padding: 0 20px;
+}
+
+.row-playlists p {
+  color: hsla(0,0%,100%,.7)!important;
+}
+
+.songs a {
+  margin: 0 auto;
+}

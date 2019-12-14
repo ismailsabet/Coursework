@@ -30,4 +30,24 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_title: Sunny's funland
+
+  home:
+    contact:
+      title: Contact Us
+      name: "Name"
+      enter_name: Enter your name
+      email: "Email"
+      enter_email: Enter your email
+      message: "Message"
+      enter_message: What would you like to say?
+    home:
+      app_description: All your favorite songs in one place.
+      playlist_title: Get started with Playlists
+      playlist_description: Find all of your unique playlists that shape your personality.
+      playlist_button: My Playlists
+      song_title: Songs
+      song_description: Explore hundreds of different songs from our Spotify API.
+      song_button: My Song
+
+  

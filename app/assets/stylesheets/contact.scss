@@ -1,0 +1,32 @@
+
+.contact {
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+
+  form label, form input {
+    display: block;
+    margin: 10px 0;
+  }
+
+  input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 18px;
+  }
+
+  .message {
+    height: 150px;
+    padding: 15px 18px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #929292;
+    border-radius: 4px;
+    resize: none;
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+}
