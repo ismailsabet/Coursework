@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version: 2.5.1
+Rails version: 5.2.4
 
-Things you may want to cover:
+The app lets users create different playlists and add any songs they'd like to them using Deezer's API
+It is entirely responsive without the use of Bootstrap. All responsive features are in the @media tags in CSS.
 
-* Ruby version
+Images used:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Homepage background: https://www.pexels.com/photo/man-in-green-dress-shirt-and-red-beanie-2614384/
+From github's main website: https://github.githubassets.com/images/modules/site/universe19.png
