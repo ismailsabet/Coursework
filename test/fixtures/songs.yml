@@ -1,17 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: Do I Wanna Know
-  artist: Arctic Monkeys
-  album: AM
-  playlist_id: 1
-  result_id: 1
+  name: Money For Nothing
+  artist: Dire Straits
+  album: Brothers In Arms
+  playlist: one
   img_url: imageurl
 
 two:
   name: Layla
   artist: Eric Clapton
   album: Unplugged (Deluxe Edition)
-  playlist_id: 1
-  result_id: 1
+  playlist: one
   img_url: imageurl
