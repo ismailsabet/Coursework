@@ -54,3 +54,25 @@ nav {
   margin: 0;
   padding-top: 30px;
 }
+
+.menu_links {
+  display: none;
+  margin: 0 auto;
+  background-color: #555;
+  position: absolute;
+  width: 100%;
+}
+
+.menu_links a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.menu_links a:hover {
+  background-color: $darkGreen;
+}
+
+.show_menu {
+  display: block !important;
+}

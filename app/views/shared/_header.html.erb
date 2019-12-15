@@ -1,13 +1,25 @@
 <header>
   <div class="container">
     <nav>
-      <%= link_to "Sunny's funland", root_path, class: "title" %>
+      <%= link_to I18n.t('.app_title'), root_path, class: "title" %>
       <div class="nav_links">
         <%= link_to "Songs", songs_path, class: "button" %>
         <%= link_to "Playlists", playlists_path, class: "button" %>
         <%= link_to "Contact Us", contact_path, class: "button" %>
       </div>
-      <a href="#" class="button menu"><i class="fas fa-bars"></i><%= t('.app_title') %></a>
+      <a class="button menu" id="menu"><i class="fas fa-bars"></i>Menu</a>
     </nav>
   </div>
+  <div class="menu_links">
+    <%= link_to "Songs", songs_path %>
+    <%= link_to "Playlists", playlists_path %>
+    <%= link_to "Contact Us", contact_path %>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#menu').click(function() {
+        $('.menu_links').toggleClass('show_menu');
+      });
+    });
+  </script>
 </header>
