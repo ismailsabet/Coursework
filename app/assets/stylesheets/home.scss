@@ -68,7 +68,7 @@ $darkGreen: #58a700;
   padding: 60px 0;
 }
 
-.albums {
+.song_imgs {
   display: flex;
   flex: 1.7;
   margin: 0;
@@ -97,7 +97,7 @@ $darkGreen: #58a700;
   .texts {
     margin: 0 !important;
   }
-  .album {
+  .song_img {
     width: 100px !important;
     height: 100px !important;
   }
@@ -107,6 +107,8 @@ $darkGreen: #58a700;
   .nav_links {
     display: none !important;
   }
+
+  // shows the hamburger menu for smaller screens
   .menu {
     display: flex !important;
     width: 100px;
@@ -117,13 +119,13 @@ $darkGreen: #58a700;
 
 @media screen and (max-width: 1023px) {
 
-  .albums {
+  .song_imgs {
     padding: 0 !important;
   }
 
 }
 
-.album {
+.song_img {
   margin: 10px;
   border: 0;
   width: 120px;

@@ -34,7 +34,8 @@ en:
   home:
     contact:
       title: Contact Us
-      name: "Name"
+    contact_form:
+      name: Name
       enter_name: Enter your name
       email: Email
       enter_email: Enter your email
@@ -43,22 +44,29 @@ en:
 
     home:
       app_description: All your favorite songs in one place.
-      playlist_title: Get started with Playlists
+      playlist_title: Playlists
       playlist_description: Find all of your unique playlists that shape your personality.
       playlist_button: My Playlists
       song_title: Songs
-      song_description: Explore hundreds of different songs from our Spotify API.
-      song_button: My Song
+      song_description: View all your songs from all your different playlists.
+      song_button: My Songs
 
     request_contact:
       no_email: You must provide an email address.
       email_sent: Thank you. We will be in touch shortly.
 
   songs:
+    created: Song was successfully created.
+    deleted: Song was successfully deleted.
+    api_host: deezerdevs-deezer.p.rapidapi.com
+    api_key: 10aa7d7219mshc392ad81557b23bp1e6c60jsnf042b141ec03
     index:
       title: Songs
 
   playlists:
+    created: Playlist was successfully created.
+    updated: Playlist was successfully updated.
+    deleted: Playlist was successfully deleted.
     index:
       title: Playlists
       button: New Playlist
@@ -76,7 +84,7 @@ en:
       contact: Contact Us
       copyright: Ismail Sabet, Inc.
     header:
-      app_title: Sabet's funland
+      app_title: Music City
       songs: Songs
       playlists: Playlists
       contact: Contact Us

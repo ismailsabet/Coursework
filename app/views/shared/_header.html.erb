@@ -7,14 +7,17 @@
         <%= link_to t('.playlists'), playlists_path, class: "button" %>
         <%= link_to t('.contact'), contact_path, class: "button" %>
       </div>
+      <!-- This is hidden for larger screens -->
       <a class="button menu" id="menu"><i class="fas fa-bars"></i><%= t('.menu') %></a>
     </nav>
   </div>
+  <!-- This is also hidden until someone clicks on menu -->
   <div class="menu_links">
     <%= link_to t('.songs'), songs_path %>
     <%= link_to t('.playlists'), playlists_path %>
     <%= link_to t('.contact'), contact_path %>
   </div>
+  <!-- Toggles the class to hide and show the menu whenever a user clicks on the humbuger menu on smaller screens -->
   <script type="text/javascript">
     $(document).ready(function() {
       $('#menu').click(function() {
