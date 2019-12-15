@@ -21,7 +21,7 @@
             %td= link_to song.name, song
             %td= link_to song.artist, song
             %td= link_to song.album, song
-            %td= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, @playlist, method: :delete, remote: true
+            %td= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, song, method: :delete, remote: true
 
 
     = link_to t('.add_song'), new_song_path(playlist_id: @playlist), class: "button"

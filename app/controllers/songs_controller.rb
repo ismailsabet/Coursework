@@ -40,8 +40,8 @@ class SongsController < ApplicationController
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
     request = Net::HTTP::Get.new(url)
-    request["x-rapidapi-host"] = 'deezerdevs-deezer.p.rapidapi.com'
-    request["x-rapidapi-key"] = '10aa7d7219mshc392ad81557b23bp1e6c60jsnf042b141ec03'
+    request["x-rapidapi-host"] = I18n.t('songs.api_host')
+    request["x-rapidapi-key"] = I18n.t('songs.api_key')
 
     response = http.request(request)
     result = JSON.parse(response.body)
@@ -63,11 +63,9 @@ class SongsController < ApplicationController
 
     respond_to do |format|
       if @song.save
-        puts "song created"
-        format.html { redirect_to @song, notice: 'Song was successfully created.' }
+        format.html { redirect_to @song, notice: I18n.t('songs.created') }
         format.json { render :show, status: :created, location: @song }
       else
-        puts "song not created"
         format.html { render :new }
         format.json { render json: @song.errors, status: :unprocessable_entity }
       end
@@ -79,10 +77,11 @@ class SongsController < ApplicationController
   def destroy
     @song.destroy
     respond_to do |format|
-      format.html { redirect_to songs_url, notice: 'Song was successfully destroyed.' }
+      format.html { redirect_to playlists_path, notice: I18n.t('songs.deleted') }
       format.json { head :no_content }
     end
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
