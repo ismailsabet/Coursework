@@ -18,8 +18,11 @@ class SongsController < ApplicationController
   def new
   end
 
+  # Uses Deezer API to execute a search
   def search_songs
 
+    # Replaces current search result with an empty one. There should always be only 1 result.
+    # This is why seeding first is important.
     @result.destroy
     @result = Result.new(id: 1, name: 'init')
     @result.save
@@ -43,11 +46,13 @@ class SongsController < ApplicationController
     response = http.request(request)
     result = JSON.parse(response.body)
 
+    # You can check the layout of the JSON by going to rapidapi website and testing the endpoints.
     result['data'].each do |child|
       @song = @result.songs.new(name: child['title'],artist: child['artist']['name'],album: child['album']['title'], img_url: child['album']['cover_big'])
       @song.save
     end
 
+    # reloads page to show result
     redirect_back(fallback_location: root_path)
   end
 
@@ -89,6 +94,7 @@ class SongsController < ApplicationController
       @playlist = Playlist.find_by(id: params[:playlist_id]) || Playlist.find(song_params[:playlist_id])
     end
 
+    # Finds the current search result (will always have an id of 1)
     def set_result
       @result = Result.find_by(id: 1)
     end
