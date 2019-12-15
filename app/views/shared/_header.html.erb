@@ -1,19 +1,19 @@
 <header>
   <div class="container">
     <nav>
-      <%= link_to I18n.t('.app_title'), root_path, class: "title" %>
+      <%= link_to t('.app_title'), root_path, class: "title" %>
       <div class="nav_links">
-        <%= link_to "Songs", songs_path, class: "button" %>
-        <%= link_to "Playlists", playlists_path, class: "button" %>
-        <%= link_to "Contact Us", contact_path, class: "button" %>
+        <%= link_to t('.songs'), songs_path, class: "button" %>
+        <%= link_to t('.playlists'), playlists_path, class: "button" %>
+        <%= link_to t('.contact'), contact_path, class: "button" %>
       </div>
-      <a class="button menu" id="menu"><i class="fas fa-bars"></i>Menu</a>
+      <a class="button menu" id="menu"><i class="fas fa-bars"></i><%= t('.menu') %></a>
     </nav>
   </div>
   <div class="menu_links">
-    <%= link_to "Songs", songs_path %>
-    <%= link_to "Playlists", playlists_path %>
-    <%= link_to "Contact Us", contact_path %>
+    <%= link_to t('.songs'), songs_path %>
+    <%= link_to t('.playlists'), playlists_path %>
+    <%= link_to t('.contact'), contact_path %>
   </div>
   <script type="text/javascript">
     $(document).ready(function() {

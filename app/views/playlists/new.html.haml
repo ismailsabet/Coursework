@@ -1,11 +1,9 @@
 = render 'shared/header'
 
-%div{:id => 'mid'}
-  %div{:class => 'container'}
-    %h1 New playlist
+%div{id: 'mid'}
+  %div{class: 'container'}
+    %h1{class: "playlist_margin"}= t('.title')
 
     = render 'form'
-
-    = link_to 'Back', playlists_path, class: 'button'
 
 = render 'shared/footer'

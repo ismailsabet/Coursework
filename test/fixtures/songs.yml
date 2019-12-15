@@ -5,9 +5,13 @@ one:
   artist: Arctic Monkeys
   album: AM
   playlist_id: 1
+  result_id: 1
+  img_url: imageurl
 
 two:
   name: Layla
   artist: Eric Clapton
   album: Unplugged (Deluxe Edition)
   playlist_id: 1
+  result_id: 1
+  img_url: imageurl

@@ -30,17 +30,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  app_title: Sunny's funland
 
   home:
     contact:
       title: Contact Us
       name: "Name"
       enter_name: Enter your name
-      email: "Email"
+      email: Email
       enter_email: Enter your email
       message: "Message"
       enter_message: What would you like to say?
+
     home:
       app_description: All your favorite songs in one place.
       playlist_title: Get started with Playlists
@@ -50,4 +50,34 @@ en:
       song_description: Explore hundreds of different songs from our Spotify API.
       song_button: My Song
 
-  
+    request_contact:
+      no_email: You must provide an email address.
+      email_sent: Thank you. We will be in touch shortly.
+
+  songs:
+    index:
+      title: Songs
+
+  playlists:
+    index:
+      title: Playlists
+      button: New Playlist
+    new:
+      title: New Playlist
+    show:
+      add_song: Add Song
+    edit:
+      edit: Editing Playlist
+
+  shared:
+    footer:
+      songs: Songs
+      playlists: Playlists
+      contact: Contact Us
+      copyright: Ismail Sabet, Inc.
+    header:
+      app_title: Sabet's funland
+      songs: Songs
+      playlists: Playlists
+      contact: Contact Us
+      menu: Menu

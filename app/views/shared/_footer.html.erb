@@ -1,10 +1,10 @@
 <footer>
   <div class="footer_links">
-    <%= link_to "Songs", songs_path %>
+    <%= link_to t('.songs'), songs_path %>
     |
-    <%= link_to "Playlists", playlists_path %>
+    <%= link_to t('.playlists'), playlists_path %>
     |
-    <%= link_to "Contact Us", contact_path %>
+    <%= link_to t('.contact'), contact_path %>
   </div>
-  <p class="copyright">&copy; Ismail Sabet, Inc.</p>
+  <p class="copyright">&copy; <%= t('.copyright')%></p>
 </footer>

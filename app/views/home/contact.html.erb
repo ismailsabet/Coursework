@@ -3,8 +3,11 @@
 <div id="mid">
   <div class="container">
     <div class="contact">
-      <h2>Contact Us</h2>
+      <h2><%= t('.title') %></h2>
       <%= render 'contact_form' %>
+      <% flash.each do |key, value| %>
+        <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
+      <% end %>
     </div>
   </div>
 </div>
